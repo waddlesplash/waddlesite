@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta charset="utf-8" />
+    <title>{{title}} | WaddleSite</title>
+	<style type="text/css">
+		body, select, input { font-family: Verdana,Arial,Helvetica,sans-serif; }
+		a:hover, a:active { color: red; }
+	</style>
+	<link type="text/css" rel="stylesheet" href="data/jquery.slides.css" />
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/jquery.slides.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.slides').slides({
+				preload: true,
+				preloadImage: 'data/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+			});
+		});
+	</script>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+	{{{header_links}}}<br/>
+	
+	{{{page_content}}}
+	
+	<br/><br/><br/><br/>
+	<hr width="30%" align="left" />
+	<i>this site is running on <a target="_blank" href="https://github.com/waddlesplash/waddlesite/">waddlesite</a> v{{waddlesite_ver}}</i>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<br/><br/>{{{slides_begin}}}
+	<div>
+		<img src="http://placehold.it/570x270" />
+		<div class="caption">
+			This is the caption for this image. This image is a 570x270 picture. It was served from <a href="http://placehold.it">placehold.it</a>
+		</div>
+	</div>
+	<div>
+		<img src="http://placehold.it/570x185" />
+		<div class="caption">
+			Some Random Text...
+		</div>
+	</div>
+{{{slides_end}}}
