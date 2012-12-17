@@ -4,6 +4,9 @@ A simple template-based website system that has a goal of making it easy to make
 ## how to use
 [See the documentation.](https://github.com/waddlesplash/waddlesite/wiki)
 
+## is there an example?
+This repo *is* an example. [See what it outputs.](http://waddlesplash.github.com/waddlesite/)
+
 ## how do I do [something]?
 If you're stumped (AFTER reading the documentation) perhaps I forgot to document something. If so, [file a bug report](https://github.com/waddlesplash/waddlesite/issues/new) with your question. It may end up being that you *can't* do whatever you want to do (yet!) so your question may turn into a feature request.
 
