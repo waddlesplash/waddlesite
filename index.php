@@ -12,11 +12,13 @@ $MOD_REWRITE = file_exists('.htaccess');
 
 /* slides.js data */
 $SLIDES_BEGIN = '<table><tr><td><div class="slides"><table><tr><td><a href="#" class="prev">'.
-				'<img src="data/arrow-prev.png" width="24" height="43" alt="Arrow Prev" />'.
+				'<img class="one" src="data/arrow-prev.png" width="24" height="43" alt="Arrow Prev" />'.
+				'<img class="two" src="data/arrow-prev_hover.png" width="24" height="43" alt="Arrow Prev" />'.
 				'</a></td><td><div class="slides_container">';
 
 $SLIDES_END = '</div></td><td><a href="#" class="next">'.
-			  '<img src="data/arrow-next.png" width="24" height="43" alt="Arrow Next" />'.
+			  '<img class="one" src="data/arrow-next.png" width="24" height="43" alt="Arrow Next" />'.
+			  '<img class="two" src="data/arrow-next_hover.png" width="24" height="43" alt="Arrow Next" />'.
 			  '</a></td></tr></table></div></td></tr></table>';
 
 function fatalError($num,$txt) {

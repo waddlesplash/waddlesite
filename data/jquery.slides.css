@@ -36,6 +36,35 @@ div.slides .caption {
 	text-shadow: none;
 }
 
+/* "<" button */
+.prev img.one {
+	display: inline;
+}
+.prev img.two {
+	display: none;
+}
+.prev:hover img.one {
+	display: none;
+}
+.prev:hover img.two {
+	display: inline;
+}
+
+/* ">" button */
+.next img.one {
+	display: inline;
+}
+.next img.two {
+	display: none;
+}
+.next:hover img.one {
+	display: none;
+}
+.next:hover img.two {
+	display: inline;
+}
+
+/* the "."s that allow you to navigate */
 .pagination {
 	padding-left: 0;
 	margin-top: 5px;
@@ -53,9 +82,12 @@ div.slides .caption {
 	width: 12px;
 	height: 0;
 	padding-top: 12px;
-	background-image: url(../data/pagination.png);
+	background-image: url(pagination.png);
 	background-position: 0 0;
 	overflow: hidden;
+}
+.pagination li:hover a {
+	background-position: 0 -24px;
 }
 .pagination li.current a {
 	background-position: 0 -12px;
