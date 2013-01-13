@@ -19,6 +19,9 @@ div.slides .slides_container div img {
 	width: 100%;
 	height: 100%;
 	display: block;
+	margin: 0;
+	border: 0 !important;
+	border-color: 0 !important;
 }
 div.slides .caption {
 	text-align: left;
@@ -36,31 +39,22 @@ div.slides .caption {
 	text-shadow: none;
 }
 
-/* "<" button */
-.prev img.one {
+/* "<" and ">" buttons */
+.prev img, .next img {
+	border: 0;
+	box-shadow: none;
+	margin: 0;
+}
+.prev img.one, .next img.one {
 	display: inline;
 }
-.prev img.two {
+.prev img.two, .next img.two  {
 	display: none;
 }
-.prev:hover img.one {
+.prev:hover img.one, .next:hover img.one {
 	display: none;
 }
-.prev:hover img.two {
-	display: inline;
-}
-
-/* ">" button */
-.next img.one {
-	display: inline;
-}
-.next img.two {
-	display: none;
-}
-.next:hover img.one {
-	display: none;
-}
-.next:hover img.two {
+.prev:hover img.two, .next:hover img.two {
 	display: inline;
 }
 
@@ -76,6 +70,7 @@ div.slides .caption {
 	margin: 0 1px;
 	list-style: none;
 	display: inline-block;
+	padding: 0;
 }
 .pagination li a {
 	display: inline-block;
