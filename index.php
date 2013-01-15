@@ -7,7 +7,7 @@
  */
 require_once('lib/mustache.php');
 require_once('config.php');
-$WADDLESITE_VER = '0.1';
+$WADDLESITE_VER = '0.2';
 $MOD_REWRITE = file_exists('.htaccess');
 
 /* slides.js data */
