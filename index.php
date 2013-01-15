@@ -2,7 +2,7 @@
 /* WaddleSite - v0.2
  * ===============
  * simple template-based website system
- * (c) 2012 waddlesplash (http://github.com/waddlesplash)
+ * (c) 2012-2013 waddlesplash (http://github.com/waddlesplash)
  * MIT license.
  */
 require_once('lib/mustache.php');
@@ -52,7 +52,8 @@ $header = '';
 foreach($h as $i => $a) {
 	$b = explode(';;',$a);
 	if(count($b) != 2) { continue; }
-	if(!$MOD_REWRITE) {
+	if(!$MOD_REWRITE && (strpos($b[0],'http://') !== 0) 
+					 && (strpos($b[0],'https://') !== 0)) {
 		$href = '?p='.$b[0];
 	} else {
 		$href = $b[0];
