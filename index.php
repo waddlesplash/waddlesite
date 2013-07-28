@@ -1,5 +1,5 @@
 <?php
-/* WaddleSite - v0.2
+/* WaddleSite - v1.0
  * ===============
  * simple template-based website system
  * (c) 2012-2013 waddlesplash (http://github.com/waddlesplash)
@@ -7,7 +7,7 @@
  */
 require_once('lib/mustache.php');
 require_once('config.php');
-$WADDLESITE_VER = '0.2';
+$WADDLESITE_VER = '1.0';
 $MOD_REWRITE = file_exists('.htaccess');
 
 /* slides.js data */
@@ -24,7 +24,7 @@ $SLIDES_END = '</div></td><td><a href="#" class="next">'.
 function fatalError($num,$txt) {
 	global $WADDLESITE_VER;
 	echo "<title>Error $num</title><h1>$num $txt</h1>Please contact the webmaster!";
-	echo '<br/><br/><br/><hr width="30%" align="left" /><i>this site running on ';
+	echo '<br/><br/><br/><hr width="30%" align="left" /><i>this site is running on ';
 	echo '<a target="_blank" href="https://github.com/waddlesplash/waddlesite/">';
 	echo 'waddlesite</a> v'.$WADDLESITE_VER.'</i>';
 	exit(1);
@@ -73,7 +73,7 @@ foreach($h as $i => $a) {
 }
 $header .= "\n";
 
-/* render page */
+/* pre-render page */
 $page_dat = file_get_contents("content/$p.page");
 $data = array('slides_begin' => $SLIDES_BEGIN,
 			  'slides_end' => $SLIDES_END);
