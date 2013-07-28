@@ -1,5 +1,5 @@
 div.slides {
-	box-shadow: 0px 0px 50px #888888;
+	box-shadow: 0px 0px 10px #888888;
 	border-radius: 17px;
 	overflow: hidden;
 }
@@ -27,7 +27,7 @@ div.slides .caption {
 	text-align: left;
 	position: absolute;
 	z-index: 500;
-	bottom: 20%;
+	bottom: 50px;
 	width: 100%;
 	padding-left: 5px;
 	padding-right: 5px;
